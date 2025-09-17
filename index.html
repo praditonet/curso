@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos y Diplomados Gratuitos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2><i class="fas fa-graduation-cap"></i> EduLibre</h2>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cursos" class="nav-link">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#diplomados" class="nav-link">Diplomados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacto" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Cursos y Diplomados Gratuitos</h1>
+            <p>Descubre una amplia variedad de cursos y diplomados completamente gratuitos para impulsar tu carrera profesional</p>
+            <button class="cta-button" onclick="scrollToSection('cursos')">
+                Explorar Cursos <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        <div class="hero-animation">
+            <div class="floating-card">
+                <i class="fas fa-laptop-code"></i>
+                <span>Programación</span>
+            </div>
+            <div class="floating-card">
+                <i class="fas fa-chart-line"></i>
+                <span>Marketing</span>
+            </div>
+            <div class="floating-card">
+                <i class="fas fa-paint-brush"></i>
+                <span>Diseño</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="filters">
+        <div class="container">
+            <h3>Filtrar por categoría:</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="programacion">Programación</button>
+                <button class="filter-btn" data-category="marketing">Marketing</button>
+                <button class="filter-btn" data-category="diseno">Diseño</button>
+                <button class="filter-btn" data-category="idiomas">Idiomas</button>
+                <button class="filter-btn" data-category="negocios">Negocios</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos Section -->
+    <section id="cursos" class="courses-section">
+        <div class="container">
+            <h2 class="section-title">Cursos Gratuitos</h2>
+            <div class="courses-grid" id="courses-grid">
+                <!-- Curso 1 -->
+                <div class="course-card" data-category="programacion">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=250&fit=crop" alt="JavaScript Básico">
+                        <div class="course-overlay">
+                            <button class="view-course-btn">Ver Curso</button>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Programación</div>
+                        <h3>JavaScript desde Cero</h3>
+                        <p>Aprende los fundamentos de JavaScript, el lenguaje más popular para desarrollo web.</p>
+                        <div class="course-info">
+                            <span><i class="fas fa-clock"></i> 40 horas</span>
+                            <span><i class="fas fa-users"></i> 1,234 estudiantes</span>
+                            <span class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                4.8
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso 2 -->
+                <div class="course-card" data-category="diseno">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop" alt="Diseño UX/UI">
+                        <div class="course-overlay">
+                            <button class="view-course-btn">Ver Curso</button>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Diseño</div>
+                        <h3>Diseño UX/UI Completo</h3>
+                        <p>Domina las herramientas y metodologías del diseño de experiencia e interfaz de usuario.</p>
+                        <div class="course-info">
+                            <span><i class="fas fa-clock"></i> 60 horas</span>
+                            <span><i class="fas fa-users"></i> 892 estudiantes</span>
+                            <span class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                4.9
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso 3 -->
+                <div class="course-card" data-category="marketing">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="Marketing Digital">
+                        <div class="course-overlay">
+                            <button class="view-course-btn">Ver Curso</button>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Marketing</div>
+                        <h3>Marketing Digital Avanzado</h3>
+                        <p>Estrategias completas de marketing digital, SEO, SEM y redes sociales.</p>
+                        <div class="course-info">
+                            <span><i class="fas fa-clock"></i> 45 horas</span>
+                            <span><i class="fas fa-users"></i> 2,156 estudiantes</span>
+                            <span class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                4.7
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso 4 -->
+                <div class="course-card" data-category="programacion">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop" alt="Python">
+                        <div class="course-overlay">
+                            <button class="view-course-btn">Ver Curso</button>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Programación</div>
+                        <h3>Python para Principiantes</h3>
+                        <p>Aprende Python desde cero, ideal para análisis de datos y desarrollo web.</p>
+                        <div class="course-info">
+                            <span><i class="fas fa-clock"></i> 50 horas</span>
+                            <span><i class="fas fa-users"></i> 1,678 estudiantes</span>
+                            <span class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                4.8
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso 5 -->
+                <div class="course-card" data-category="idiomas">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=250&fit=crop" alt="Inglés">
+                        <div class="course-overlay">
+                            <button class="view-course-btn">Ver Curso</button>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Idiomas</div>
+                        <h3>Inglés Conversacional</h3>
+                        <p>Mejora tu inglés hablado con ejercicios prácticos y conversaciones reales.</p>
+                        <div class="course-info">
+                            <span><i class="fas fa-clock"></i> 30 horas</span>
+                            <span><i class="fas fa-users"></i> 3,245 estudiantes</span>
+                            <span class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                4.6
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso 6 -->
+                <div class="course-card" data-category="negocios">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop" alt="Emprendimiento">
+                        <div class="course-overlay">
+                            <button class="view-course-btn">Ver Curso</button>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Negocios</div>
+                        <h3>Fundamentos de Emprendimiento</h3>
+                        <p>Aprende a crear y desarrollar tu propio negocio desde la idea hasta la ejecución.</p>
+                        <div class="course-info">
+                            <span><i class="fas fa-clock"></i> 35 horas</span>
+                            <span><i class="fas fa-users"></i> 1,987 estudiantes</span>
+                            <span class="course-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                4.9
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diplomados Section -->
+    <section id="diplomados" class="diplomas-section">
+        <div class="container">
+            <h2 class="section-title">Diplomados Especializados</h2>
+            <div class="diplomas-grid">
+                <div class="diploma-card">
+                    <div class="diploma-header">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Diplomado en Desarrollo Web Full Stack</h3>
+                    </div>
+                    <div class="diploma-content">
+                        <p>Programa completo que abarca frontend y backend con tecnologías modernas.</p>
+                        <ul>
+                            <li>HTML5, CSS3, JavaScript ES6+</li>
+                            <li>React.js y Node.js</li>
+                            <li>Bases de datos MongoDB</li>
+                            <li>Proyecto final real</li>
+                        </ul>
+                        <div class="diploma-info">
+                            <span><i class="fas fa-calendar"></i> 6 meses</span>
+                            <span><i class="fas fa-award"></i> Certificado</span>
+                        </div>
+                        <button class="diploma-btn">Inscribirse Gratis</button>
+                    </div>
+                </div>
+
+                <div class="diploma-card">
+                    <div class="diploma-header">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Diplomado en Data Science</h3>
+                    </div>
+                    <div class="diploma-content">
+                        <p>Aprende análisis de datos, machine learning y visualización de datos.</p>
+                        <ul>
+                            <li>Python para Data Science</li>
+                            <li>Pandas, NumPy, Matplotlib</li>
+                            <li>Machine Learning básico</li>
+                            <li>Tableau y Power BI</li>
+                        </ul>
+                        <div class="diploma-info">
+                            <span><i class="fas fa-calendar"></i> 8 meses</span>
+                            <span><i class="fas fa-award"></i> Certificado</span>
+                        </div>
+                        <button class="diploma-btn">Inscribirse Gratis</button>
+                    </div>
+                </div>
+
+                <div class="diploma-card">
+                    <div class="diploma-header">
+                        <i class="fas fa-bullhorn"></i>
+                        <h3>Diplomado en Marketing Digital</h3>
+                    </div>
+                    <div class="diploma-content">
+                        <p>Estrategias avanzadas de marketing digital y gestión de campañas.</p>
+                        <ul>
+                            <li>SEO y SEM avanzado</li>
+                            <li>Social Media Marketing</li>
+                            <li>Email Marketing</li>
+                            <li>Análisis de métricas</li>
+                        </ul>
+                        <div class="diploma-info">
+                            <span><i class="fas fa-calendar"></i> 5 meses</span>
+                            <span><i class="fas fa-award"></i> Certificado</span>
+                        </div>
+                        <button class="diploma-btn">Inscribirse Gratis</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-nosotros" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre EduLibre</h2>
+                    <p>En EduLibre creemos que la educación de calidad debe ser accesible para todos. Por eso ofrecemos cursos y diplomados completamente gratuitos, diseñados por expertos en cada área.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>10,000+</h3>
+                            <p>Estudiantes</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Cursos</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Diplomados</p>
+                        </div>
+                        <div class="stat">
+                            <h3>4.8</h3>
+                            <p>Valoración</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=400&fit=crop" alt="Estudiantes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contactanos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>¿Tienes alguna pregunta?</h3>
+                    <p>Estamos aquí para ayudarte en tu camino de aprendizaje.</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@edulibre.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Education St, Learning City</span>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="email" placeholder="Tu email" required>
+                    <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-graduation-cap"></i> EduLibre</h3>
+                    <p>Educación gratuita y de calidad para todos.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Cursos</h4>
+                    <ul>
+                        <li><a href="#">Programación</a></li>
+                        <li><a href="#">Diseño</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Idiomas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Soporte</a></li>
+                        <li><a href="#">Términos de Uso</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduLibre. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
